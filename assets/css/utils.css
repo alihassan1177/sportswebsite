@@ -1,0 +1,150 @@
+.container{
+    max-width: var(--container-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: var(--btn-padding-y) var(--btn-padding-x);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.btn-style-1, .navigation a {
+    font-weight: 500;
+    color: white;
+    font-family: var(--font-oswald);
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-style-1{
+    min-width: 148px;
+}
+
+.btn-style-1:hover::after{
+    background-color: var(--clr-green-100);
+}
+
+.btn-style-1::after{
+    background-color: var(--clr-green-200);
+    background-image: url(../img/pattern-bg.png);
+}
+
+.btn-style-1::after , .navigation a::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: skew(-15deg);
+    z-index: -1;
+    transition: background-color 300ms ease-in-out;
+    background-size: contain;
+}   
+
+.btn-style-1:nth-child(1)::after{
+    background-color: var(--clr-green-100);
+}
+
+.icon-button{
+    display: inline-block;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.bg-green-100{
+    background-color: var(--clr-green-100);
+}
+
+.bg-green-200{
+    background-color: var(--clr-green-200);
+}
+
+.bg-green-300{
+    background-color: var(--clr-green-300);
+}
+
+.bg-pattern{
+    background-image: url(../img/pattern-bg.png);
+    background-repeat: repeat;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.text-green-100{
+    color: var(--clr-green-100);
+}
+
+.text-green-200{
+    color: var(--clr-green-200);
+}
+
+.text-green-300{
+    color: var(--clr-green-300);
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.section-divider{
+    height: 1px;
+    background-color: white;
+    margin: 40px 0px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.form-label{
+    font-size: 16px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.col-span-2{
+    grid-column: span 2;
+}
+
+.secondary-menu-desktop .btn:nth-child(1) {
+    margin-right: 8px;
+}
