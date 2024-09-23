@@ -21,6 +21,8 @@ $(function () {
         });
     });
 
+    
+    
 
     // Hero Slider
     $('.slider').owlCarousel({
@@ -31,8 +33,8 @@ $(function () {
         smartSpeed: 500,
         dotsEach: true,
         navText: [
-            '<img src="/assets/img/hero-slider-left-arrow.png" />',
-            '<img src="/assets/img/hero-slider-right-arrow.png" />'
+            `<img src="${myTheme.templateDirectoryUri}/assets/img/hero-slider-left-arrow.png" />`,
+            `<img src="${myTheme.templateDirectoryUri}/assets/img/hero-slider-right-arrow.png" />`
         ]
     })
 
@@ -46,8 +48,8 @@ $(function () {
         dotsEach: false,
         margin: 30,
         navText: [
-            '<img src="/assets/img/hero-slider-left-arrow.png" />',
-            '<img src="/assets/img/hero-slider-right-arrow.png" />'
+            `<img src="${myTheme.templateDirectoryUri}/assets/img/hero-slider-left-arrow.png" />`,
+            `<img src="${myTheme.templateDirectoryUri}/assets/img/hero-slider-right-arrow.png" />`
         ],
         responsive: {
             768: {
