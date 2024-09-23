@@ -1,0 +1,138 @@
+/* Comment Form Container */
+.comment-respond {
+    background-color: #1a3a1a;
+    /* Darker green background */
+    border-radius: 5px;
+    /* Rounded corners */
+    padding: 20px;
+    /* Padding around the form */
+    margin: 20px 0;
+    /* Space above and below the comment form */
+}
+
+/* Comment Form Title */
+.comment-reply-title {
+    font-family: 'Montserrat', sans-serif;
+    /* Use Montserrat for the title */
+    font-size: 24px;
+    /* Title font size */
+    color: #ffffff;
+    /* White color for contrast */
+    margin-bottom: 15px;
+    /* Space below the title */
+}
+
+/* Form Labels */
+.comment-form label {
+    font-family: 'Roboto', sans-serif;
+    /* Use Roboto for labels */
+    color: #e0e0e0;
+    /* Light grey color for labels */
+    margin-bottom: 5px;
+    /* Space below each label */
+    display: block;
+    /* Block display for proper spacing */
+}
+
+/* Input Fields */
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form textarea {
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    /* Padding inside the fields */
+    margin-bottom: 15px;
+    /* Space below each field */
+    border: 1px solid #c0c0c0;
+    /* Light grey border */
+    border-radius: 4px;
+    /* Rounded corners */
+    background-color: #2a5a2a;
+    /* Slightly lighter dark green for input fields */
+    color: #e0e0e0;
+    /* Light grey text color */
+    font-family: 'Roboto', sans-serif;
+    /* Use Roboto for input fields */
+}
+
+/* Input Field Focus */
+.comment-form input[type="text"]:focus,
+.comment-form input[type="email"]:focus,
+.comment-form textarea:focus {
+    border-color: #80dfff;
+    /* Change border color on focus */
+    outline: none;
+    /* Remove default outline */
+}
+
+/* Submit Button */
+.comment-form input[type="submit"] {
+    background-color: #ffffff;
+    /* White background */
+    color: #333;
+    /* Dark text color for contrast */
+    border: none;
+    /* No border */
+    padding: 10px 20px;
+    /* Padding around the button */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    font-family: 'Montserrat', sans-serif;
+    /* Use Montserrat for the button */
+    transition: background-color 0.3s;
+    /* Smooth transition */
+}
+
+/* Submit Button Hover */
+.comment-form input[type="submit"]:hover {
+    background-color: #e0e0e0;
+    /* Light grey on hover */
+}
+
+/* Comment List */
+.comment-list {
+    list-style: none;
+    /* Remove default list style */
+    padding: 0;
+    /* Remove padding */
+    margin: 20px 0;
+    /* Space around the list */
+}
+
+/* Individual Comment */
+.comment {
+    background-color: #2a5a2a;
+    /* Darker green for each comment */
+    border-radius: 5px;
+    /* Rounded corners */
+    padding: 15px;
+    /* Padding inside each comment */
+    margin-bottom: 15px;
+    /* Space below each comment */
+}
+
+/* Comment Author and Date */
+.comment-meta {
+    font-family: 'Roboto', sans-serif;
+    /* Use Roboto for meta info */
+    font-size: 14px;
+    /* Smaller font size for meta */
+    color: #c0c0c0;
+    /* Light grey color */
+}
+
+/* Comment Content */
+.comment-content {
+    color: #e0e0e0;
+    /* Light grey text color */
+    margin-top: 10px;
+    /* Space above the comment content */
+}
+
+
+.comments-title{
+    margin-top: 40px;
+}

@@ -1,0 +1,71 @@
+/* Card Container */
+.card {
+    border: 1px solid #c0c0c0;
+    /* Light grey border */
+    border-radius: 5px;
+    /* Rounded corners */
+    overflow: hidden;
+    /* Prevents overflow */
+    transition: transform 0.3s;
+    /* Smooth scale effect */
+    background-color: #2a5a2a;
+    /* Darker green background */
+}
+
+/* Card Hover Effect */
+
+/* Card Image */
+.card-img-top {
+    width: 100%;
+    /* Full width */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Card Body */
+.card-body {
+    padding: 15px;
+    /* Padding inside the card */
+}
+
+/* Card Title */
+.card-title {
+    font-family: 'Montserrat', sans-serif;
+    /* Use Montserrat for titles */
+    font-size: 20px;
+    /* Font size for the title */
+    color: #ffffff;
+    /* White color for contrast */
+    margin-bottom: 10px;
+    /* Space below the title */
+}
+
+/* Card Text */
+.card-text {
+    font-family: 'Roboto', sans-serif;
+    /* Use Roboto for text */
+    color: #e0e0e0;
+    /* Light grey text color */
+    margin-bottom: 15px;
+    /* Space below the text */
+}
+
+/* Card Footer */
+.card-footer {
+    background-color: #1a3a1a;
+    /* Darker green background for footer */
+    padding: 10px;
+    /* Padding inside the footer */
+    color: #c0c0c0;
+    /* Light grey for date */
+    text-align: center;
+    /* Center the footer text */
+}
+
+/* Responsive Design for Cards */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+        /* Space below cards on mobile */
+    }
+}

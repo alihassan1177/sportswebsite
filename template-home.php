@@ -8,7 +8,7 @@
 get_header();
 ?>
 
-<main class="bg-green-300 bg-pattern">
+<main id="primary" class="bg-green-300 bg-pattern site-main">
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-overlay"></div>

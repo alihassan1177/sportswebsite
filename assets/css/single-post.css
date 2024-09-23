@@ -1,0 +1,208 @@
+/* Post Title Styling */
+.single .entry-title {
+    font-family: 'Montserrat', sans-serif;
+    /* Use Montserrat for titles */
+    font-size: 36px;
+    /* Large font size for the title */
+    font-weight: bold;
+    /* Bold text for emphasis */
+    color: #ffffff;
+    /* White color for contrast */
+    margin-top: 20px;
+    /* Space above the title */
+    margin-bottom: 15px;
+    /* Space below the title */
+    text-align: center;
+    /* Center the title */
+}
+
+/* Meta Information Styling */
+.single .entry-meta {
+    font-family: 'Roboto', sans-serif;
+    /* Use Roboto for meta information */
+    font-size: 14px;
+    /* Smaller font size for meta information */
+    color: #c0c0c0;
+    /* Light grey color for subtle contrast */
+    text-align: center;
+    /* Center the meta information */
+    margin-bottom: 25px;
+    /* Space below the meta information */
+}
+
+.single .entry-meta span {
+    margin-right: 10px;
+    /* Space between meta items */
+}
+
+.single .entry-meta span:before {
+    content: '•';
+    /* Add a bullet between meta items */
+    margin-right: 5px;
+    /* Space between bullet and text */
+    color: #999999;
+    /* Medium grey color for the bullet */
+}
+
+.single .entry-meta span:first-child:before {
+    content: '';
+    /* Remove bullet before the first meta item */
+}
+
+/* Author, Date, Categories Styling */
+.single .entry-meta .byline {
+    font-weight: bold;
+    /* Bold author name */
+    color: #ffffff;
+    /* White color for author name */
+}
+
+.single .entry-meta .posted-on {
+    font-style: italic;
+    /* Italicize the date */
+    color: #e0e0e0;
+    /* Light grey for the date */
+}
+
+.single .entry-meta .cat-links a {
+    color: #80dfff;
+    /* Light blue color for category links */
+    text-decoration: none;
+    /* Remove underline from links */
+    transition: color 0.3s;
+    /* Smooth transition on hover */
+}
+
+.single .entry-meta .cat-links a:hover {
+    color: #66c2ff;
+    /* Slightly darker blue on hover */
+}
+
+/* General Post Content Styling */
+.single .entry-content {
+    font-family: 'Roboto', sans-serif;
+    /* Use Roboto for body content */
+    font-size: 18px;
+    /* Increase font size */
+    line-height: 1.7;
+    /* Set line height for better readability */
+    color: #e0e0e0;
+    /* Light grey text color */
+    background-color: #1a3a1a;
+    /* Darker green background to distinguish from the page background */
+    padding: 20px;
+    /* Add padding around the content */
+    max-width: 800px;
+    /* Limit the maximum width of the content */
+    margin: 0 auto;
+    /* Center the content */
+}
+
+/* Links within content */
+.single .entry-content a {
+    color: #80dfff;
+    /* Light blue color for links */
+    text-decoration: none;
+    /* Remove underline */
+    border-bottom: 2px solid #80dfff;
+    /* Add underline on hover */
+    transition: color 0.3s, border-bottom 0.3s;
+    /* Smooth transition */
+}
+
+.single .entry-content a:hover {
+    color: #66c2ff;
+    /* Slightly darker blue on hover */
+    border-bottom-color: #66c2ff;
+    /* Darker underline on hover */
+}
+
+/* Blockquotes */
+.single .entry-content blockquote {
+    font-style: italic;
+    /* Italicize blockquote text */
+    border-left: 4px solid #80dfff;
+    /* Light blue bar on the left */
+    padding-left: 15px;
+    /* Space between the bar and text */
+    color: #e0e0e0;
+    /* Light grey text color */
+    background-color: #2a5a2a;
+    /* Darker green background for blockquotes */
+    margin: 1.5em 0;
+    /* Space around the blockquote */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .single .entry-title {
+        font-size: 28px;
+        /* Smaller title font size on mobile */
+    }
+
+    .single .entry-meta {
+        font-size: 13px;
+        /* Smaller meta font size on mobile */
+    }
+
+    .single .entry-content {
+        font-size: 16px;
+        /* Slightly smaller font size on mobile */
+        padding: 15px;
+        /* Reduce padding on mobile */
+    }
+}
+
+
+
+/* Entry Footer Styling */
+.entry-footer {
+    background-color: #1a3a1a; /* Darker green background */
+    padding: 15px 20px; /* Padding around the footer */
+    border-top: 1px solid #c0c0c0; /* Light grey top border */
+    margin-top: 20px; /* Space above the footer */
+    text-align: center; /* Center content */
+}
+
+/* Footer Meta Information */
+.entry-footer .cat-links,
+.entry-footer .tags-links {
+    font-family: 'Roboto', sans-serif; /* Use Roboto for footer links */
+    color: #e0e0e0; /* Light grey text color */
+    font-size: 14px; /* Font size for meta links */
+    margin-bottom: 10px; /* Space below the links */
+}
+
+/* Category and Tag Links */
+.entry-footer a {
+    color: #80dfff; /* Light blue color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition on hover */
+}
+
+.entry-footer a:hover {
+    color: #66c2ff; /* Slightly darker blue on hover */
+}
+
+/* Author and Date Links */
+.entry-footer .byline,
+.entry-footer .posted-on {
+    font-size: 14px; /* Font size for author and date */
+    color: #c0c0c0; /* Light grey color */
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    .entry-footer {
+        padding: 10px; /* Reduce padding on mobile */
+    }
+
+    .entry-footer .cat-links,
+    .entry-footer .tags-links {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+}
+
+.entry-footer span{
+    margin-right: 10px;
+}

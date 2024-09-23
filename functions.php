@@ -158,9 +158,16 @@ function sportswebsite_scripts()
 	wp_enqueue_style('fancybox-css', get_template_directory_uri() . "/lib/fancybox/fancy-box.min.css");
 	wp_enqueue_style('owl-carousel-css', get_template_directory_uri() . "/lib/owl-carousel/owl.carousel.min.css");
 	wp_enqueue_style('owl-theme-css', get_template_directory_uri() . "/lib/owl-carousel/owl.theme.default.min.css");
+
 	wp_enqueue_style('utils-css', get_template_directory_uri() . "/assets/css/utils.css");
 	wp_enqueue_style('style-css', get_template_directory_uri() . "/assets/css/style.css");
 	wp_enqueue_style('responsive-css', get_template_directory_uri() . "/assets/css/responsive.css");
+	wp_enqueue_style('post-card-css', get_template_directory_uri() . "/assets/css/post-card.css");
+
+	if (is_single()) {
+		wp_enqueue_style('single-post-css', get_template_directory_uri() . "/assets/css/single-post.css");
+		wp_enqueue_style('comment-form-css', get_template_directory_uri() . "/assets/css/comment-form.css");
+	}
 
 	wp_enqueue_script('jquery-js', get_template_directory_uri() . '/lib/jquery/jquery.min.js');
 	wp_enqueue_script('fancybox-js', get_template_directory_uri() . '/lib/fancybox/fancy-box.min.js');
@@ -168,8 +175,8 @@ function sportswebsite_scripts()
 	wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/main.js');
 
 	wp_localize_script('main-js', 'myTheme', array(
-        'templateDirectoryUri' => get_template_directory_uri(),
-    ));
+		'templateDirectoryUri' => get_template_directory_uri(),
+	));
 }
 add_action('wp_enqueue_scripts', 'sportswebsite_scripts');
 

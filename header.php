@@ -42,14 +42,14 @@
 			</div>
 		</div>
 
-		<header>
+		<header class="site-header">
 			<!-- Navbar Mobile -->
 			<div class="bg-pattern bg-green-300 navbar-wrapper navbar-mobile">
 
 				<div class="navbar">
 					<div class="container">
 						<div class="d-flex align-items-center justify-content-between">
-							<a class="logo" href="index.html">
+							<a class="logo" href="<?php echo home_url()  ?>">
 								<img src="<?php echo get_template_directory_uri() . "/assets/img/logo.png" ?>" alt="">
 							</a>
 							<button class="icon-button menu-toggle" title="Toggle Menu">
@@ -102,7 +102,7 @@
 				<div class="bg-pattern bg-green-300 top-bar">
 					<div class="container w-100">
 						<div class="d-flex align-items-center justify-content-between">
-							<a href="index.html" class="logo">
+							<a href="<?php echo home_url()  ?>" class="logo">
 								<img src="<?php echo get_template_directory_uri() . "/assets/img/logo.png" ?> " alt="Adidas Logo">
 							</a>
 							<div class="secondary-menu-desktop">
@@ -155,7 +155,3 @@
 
 			</div>
 		</header>
-
-
-
-		

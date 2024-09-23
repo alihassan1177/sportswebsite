@@ -91,7 +91,7 @@ img {
     max-width: 100%;
 }
 
-header {
+.site-header {
     position: sticky;
     top: 0px;
     z-index: 100;
@@ -858,4 +858,10 @@ header {
 
 .form-textarea{
     min-height: 88px;
+}
+
+
+.error-code{
+    font-size: 80px;
+    margin-bottom: 10px;
 }
