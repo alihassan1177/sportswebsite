@@ -206,3 +206,99 @@ require get_template_directory() . '/inc/customizer.php';
 if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+function mytheme_add_admin_menu()
+{
+	add_menu_page(
+		'Theme Options',          // Page title
+		'Theme Options',          // Menu title
+		'manage_options',         // Capability
+		'mytheme-options',        // Menu slug
+		'mytheme_options_page',   // Callback function
+		'dashicons-admin-generic', // Icon
+		100                       // Position
+	);
+}
+
+add_action('admin_menu', 'mytheme_add_admin_menu');
+
+function mytheme_settings_init()
+{
+	register_setting('mytheme_options_group', 'mytheme_options');
+
+	add_settings_section(
+		'mytheme_section',        // Section ID
+		'General Settings',       // Section title
+		'mytheme_section_callback', // Callback function
+		'mytheme-options'         // Page slug
+	);
+
+	add_settings_field(
+		'mytheme_field_example',  // Field ID
+		'Example Field',          // Field title
+		'mytheme_field_example_render', // Callback function
+		'mytheme-options',        // Page slug
+		'mytheme_section'         // Section ID
+	);
+
+	add_settings_field(
+		'mytheme_name',  // Field ID
+		'Name',          // Field title
+		'mytheme_field_name_render', // Callback function
+		'mytheme-options',        // Page slug
+		'mytheme_section'         // Section ID
+	);
+
+	add_settings_field(
+		'mytheme_bg_color',        // Field ID
+		'Background Color',        // Field title
+		'mytheme_bg_color_render', // Callback function
+		'mytheme-options',         // Page slug
+		'mytheme_section'          // Section ID
+	);
+}
+add_action('admin_init', 'mytheme_settings_init');
+
+function mytheme_bg_color_render() {
+    $options = get_option('mytheme_options');
+    ?>
+    <input type="text" name="mytheme_options[mytheme_bg_color]" value="<?php echo isset($options['mytheme_bg_color']) ? esc_attr($options['mytheme_bg_color']) : ''; ?>" class="my-color-field" data-default-color="#effeff">
+    <?php
+}
+
+function mytheme_section_callback()
+{
+	echo '<p>General settings for the theme.</p>';
+}
+
+function mytheme_field_name_render()
+{
+	$options = get_option('mytheme_options');
+?>
+	<input type="text" name="mytheme_options[mytheme_name]" value="<?php echo isset($options['mytheme_name']) ? esc_attr($options['mytheme_name']) : ''; ?>">
+<?php
+}
+
+function mytheme_field_example_render()
+{
+	$options = get_option('mytheme_options');
+?>
+	<input type="text" name="mytheme_options[mytheme_field_example]" value="<?php echo isset($options['mytheme_field_example']) ? esc_attr($options['mytheme_field_example']) : ''; ?>">
+<?php
+}
+
+function mytheme_options_page()
+{
+?>
+	<div class="wrap">
+		<h1>Theme Options</h1>
+		<form action="options.php" method="post">
+			<?php
+			settings_fields('mytheme_options_group');
+			do_settings_sections('mytheme-options');
+			submit_button('Save Settings');
+			?>
+		</form>
+	</div>
+<?php
+}
